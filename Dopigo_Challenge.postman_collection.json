@@ -29,15 +29,13 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/create-account/",
-							"protocol": "http",
+							"raw": "https://dopigo-challenge-ender.herokuapp.com/create-account/",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"dopigo-challenge-ender",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"create-account",
 								""
@@ -60,15 +58,13 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/check-balance/?account_id=1",
-							"protocol": "http",
+							"raw": "https://dopigo-challenge-ender.herokuapp.com/check-balance/?account_id=1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"dopigo-challenge-ender",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"check-balance",
 								""
@@ -116,16 +112,15 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/create-transfer/",
-							"protocol": "http",
+							"raw": "https://dopigo-challenge-ender.herokuapp.com//create-transfer/",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"dopigo-challenge-ender",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
+								"",
 								"create-transfer",
 								""
 							]
@@ -140,16 +135,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/retreive-action/?account_id=1",
-							"protocol": "http",
+							"raw": "https://dopigo-challenge-ender.herokuapp.com/retreive-action/?account_id=1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"dopigo-challenge-ender",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
+								"",
 								"retreive-action",
 								""
 							],

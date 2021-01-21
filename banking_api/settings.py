@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'cv$m$v$96&cxi-spktdzkdtsx%lg8&v82680%2^cg9$ugo&n%t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['dopigo-challenge-ender.herokuapp.com']
 

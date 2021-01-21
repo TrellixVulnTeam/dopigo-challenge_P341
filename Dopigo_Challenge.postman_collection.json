@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "c0a25ad0-6b62-4b7b-b361-fb4199f615a7",
+		"name": "Dopigo_Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "Create Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "holder",
+									"value": "Arisha Barron",
+									"type": "text"
+								},
+								{
+									"key": "balance",
+									"value": "1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/create-account/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"create-account",
+								""
+							]
+						},
+						"description": "Creates account with an initial balance for a given customer"
+					},
+					"response": []
+				},
+				{
+					"name": "Check Balance",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/check-balance/?account_id=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"check-balance",
+								""
+							],
+							"query": [
+								{
+									"key": "account_id",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Retrieves balance of a given account takes an account ID as parameter"
+					},
+					"response": []
+				}
+			],
+			"description": "Account related requests"
+		},
+		{
+			"name": "Actions",
+			"item": [
+				{
+					"name": "Create Transfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sender",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "receiver",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "amount ",
+									"value": "500",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/create-transfer/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"create-transfer",
+								""
+							]
+						},
+						"description": "Creates a money transfer transaction takes \"sender\", \"receiver\" and \"amount\" as parameters"
+					},
+					"response": []
+				},
+				{
+					"name": "Retreive Actions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/retreive-action/?account_id=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"retreive-action",
+								""
+							],
+							"query": [
+								{
+									"key": "account_id",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns actions of a given account, takes account ID as parameter"
+					},
+					"response": []
+				}
+			],
+			"description": "Action related requests"
+		}
+	]
+}

@@ -25,7 +25,7 @@ SECRET_KEY = 'cv$m$v$96&cxi-spktdzkdtsx%lg8&v82680%2^cg9$ugo&n%t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['dopigo-challenge-ender.herokuapp.com']
 
 
 # Application definition
